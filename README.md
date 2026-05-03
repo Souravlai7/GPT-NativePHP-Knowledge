@@ -9,6 +9,8 @@ This workspace contains Markdown training/reference notes for Laravel, NativePHP
 - `nativephp-notes.md`: NativePHP mobile commands, Android setup, emulator networking, build/debug guidance.
 - `nativephp-auto-training.md`: Automatic response playbook for NativePHP posts/forms, API calls, app loading, database, emulator, and builds.
 - `nativephp-advanced-knowledge.md`: Advanced NativePHP architecture, auth, database, assets, permissions, plugins, offline sync, builds, signing, and release guidance.
+- `nativephp-offline-api-payment.md`: NativePHP local DB, offline-first sync, API clients, internet checks, local storage safety, payments, webhooks, and idempotency.
+- `socket-realtime-knowledge.md`: Laravel Reverb, Echo, WebSockets, Socket.IO concepts, private/presence channels, NativePHP socket networking, and troubleshooting.
 - `emulator-fixes.md`: Android Emulator, ADB, GPU, networking, and NativePHP/Laravel mobile fixes.
 - `debugging-notes.md`: General Laravel/PHP/Composer/MySQL/Vite/NativePHP troubleshooting.
 - `php-composer-knowledge.md`: PHP syntax, Composer, autoloading, extensions, quality habits.
@@ -35,11 +37,14 @@ When using this as GPT training/reference context:
 - Use queues for slow or unreliable work.
 - Use `10.0.2.2` for Android emulator access to host localhost.
 - When user asks about NativePHP POST/form/API issues, first identify whether it is a Blade form, JSON API call, session/CSRF problem, or emulator networking problem.
+- For socket issues, separate connection failure from event delivery failure; then check host/port, auth, queues, channel names, and mobile/emulator networking.
 - Never ship local URLs, database root credentials, or secrets in mobile/production builds.
 - Keep production `APP_DEBUG=false`.
 - Add tests for important behavior.
 - Use exact logs, commands, and reproducible facts before guessing.
 - For production incidents, mitigate user impact first, then root-cause.
 - Keep mobile/native production apps away from local URLs and direct database credentials.
+- For offline NativePHP apps, use local UUIDs, remote IDs, sync status fields, idempotent APIs, retry/backoff, and conflict handling.
+- For payments, keep secret keys and final verification on the backend; use webhooks and idempotency keys.
 - Prefer small, reversible fixes for real-world bugs.
 - For custom GPT answers, use ordered checklists with concrete commands and verification steps.
