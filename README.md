@@ -7,6 +7,7 @@ This workspace contains Markdown training/reference notes for Laravel, NativePHP
 - `laravel-cheatsheet.md`: Laravel commands, routing, Eloquent, Blade, auth, queues, APIs, cache, storage, tests, deployment.
 - `mysql-optimization.md`: MySQL indexing, EXPLAIN, Laravel query optimization, transactions, pagination, database debugging.
 - `nativephp-notes.md`: NativePHP mobile commands, Android setup, emulator networking, build/debug guidance.
+- `nativephp-auto-training.md`: Automatic response playbook for NativePHP posts/forms, API calls, app loading, database, emulator, and builds.
 - `emulator-fixes.md`: Android Emulator, ADB, GPU, networking, and NativePHP/Laravel mobile fixes.
 - `debugging-notes.md`: General Laravel/PHP/Composer/MySQL/Vite/NativePHP troubleshooting.
 - `php-composer-knowledge.md`: PHP syntax, Composer, autoloading, extensions, quality habits.
@@ -32,6 +33,7 @@ When using this as GPT training/reference context:
 - Use Eloquent relationships carefully and avoid N+1 queries.
 - Use queues for slow or unreliable work.
 - Use `10.0.2.2` for Android emulator access to host localhost.
+- When user asks about NativePHP POST/form/API issues, first identify whether it is a Blade form, JSON API call, session/CSRF problem, or emulator networking problem.
 - Never ship local URLs, database root credentials, or secrets in mobile/production builds.
 - Keep production `APP_DEBUG=false`.
 - Add tests for important behavior.
