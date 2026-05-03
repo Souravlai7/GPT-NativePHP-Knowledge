@@ -44,17 +44,19 @@ Required status check name:
 markdown-check
 ```
 
-## Code Owner
+## Code Owners
 
 The repo uses `.github/CODEOWNERS`.
 
-Current owner:
+Current ownership rules:
 
 ```text
-@souravlai7
+* @Web-Tech-Domains/approvers
+/.github/ @souravlai7
+/upload-ready/ @souravlai7
 ```
 
-This means pull requests require review from `souravlai7` when GitHub branch protection has "Require review from Code Owners" enabled.
+This means most pull requests require review from `@Web-Tech-Domains/approvers` when GitHub branch protection has "Require review from Code Owners" enabled. Changes under `.github/` and `upload-ready/` require review from `@souravlai7`.
 
 ## Recommended Workflow
 
@@ -65,7 +67,7 @@ This means pull requests require review from `souravlai7` when GitHub branch pro
 4. Contributor edits source Markdown files.
 5. Contributor regenerates upload-ready files if needed.
 6. Contributor opens PR into master and links the issue.
-7. souravlai7 reviews the PR.
+7. The matching code owner reviews the PR.
 8. PR is merged only after approval and resolved conversations.
 ```
 

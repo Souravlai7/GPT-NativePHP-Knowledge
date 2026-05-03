@@ -85,10 +85,12 @@ Recommended GitHub protection:
 - Require conversation resolution.
 - Block direct pushes to `master`.
 
-Code owner:
+Code owners:
 
 ```text
-@souravlai7
+* @Web-Tech-Domains/approvers
+/.github/ @souravlai7
+/upload-ready/ @souravlai7
 ```
 
 See `.github/BRANCH_PROTECTION.md` and `.github/CODEOWNERS`.
