@@ -64,7 +64,7 @@ Contributions are welcome.
 
 Before contributing:
 
-- Read `CONTRIBUTING.md`.
+- Read `CONTRIBUTING.md` and `HOW_TO_CONTRIBUTE_KNOWLEDGE.md`.
 - Create or claim an issue before opening a pull request.
 - Link the issue in the PR description using `Closes #`, `Fixes #`, or `Refs #`.
 - Edit source Markdown files in the repo root.
@@ -96,4 +96,5 @@ See `.github/BRANCH_PROTECTION.md` and `.github/CODEOWNERS`.
 ## License
 
 This knowledge base is licensed under `CC BY 4.0`. You can share and adapt it, including for custom GPTs, as long as you provide attribution.
+
 
