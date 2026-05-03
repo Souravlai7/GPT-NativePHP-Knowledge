@@ -1,6 +1,6 @@
 # Knowledge Base
 
-This workspace contains Markdown training/reference notes for Laravel, NativePHP, PHP, MySQL, Android emulator debugging, APIs, deployment, frontend tooling, Git, and testing.
+This workspace contains Markdown training/reference notes for Laravel, NativePHP, PHP, MySQL, Android emulator debugging, APIs, deployment, frontend tooling, Git, testing, architecture, real-world troubleshooting, incidents, integrations, performance, and GPT instruction design.
 
 ## Files
 
@@ -15,6 +15,12 @@ This workspace contains Markdown training/reference notes for Laravel, NativePHP
 - `deployment-ops-knowledge.md`: Deployment, queues, scheduler, Linux/Windows ops, backups, monitoring.
 - `frontend-vite-knowledge.md`: Vite, Blade frontend, JS, CSS, forms, accessibility, asset debugging.
 - `testing-quality-knowledge.md`: Laravel tests, factories, assertions, review checklist, refactoring rules.
+- `realworld-problem-solving.md`: Practical diagnosis patterns, symptom-to-cause mapping, evidence ranking, rollback rules.
+- `architecture-patterns.md`: Laravel architecture decisions, service/action classes, DTOs, repositories, anti-patterns.
+- `incident-runbooks.md`: Production outage, database, queue, payment, email, file storage, and security incident runbooks.
+- `performance-scalability.md`: Laravel, MySQL, API, queue, frontend, and NativePHP performance/scaling guidance.
+- `integration-patterns.md`: External APIs, webhooks, payments, imports, exports, email, SMS/OTP, file storage.
+- `gpt-instruction-knowledge.md`: How the custom GPT should reason, answer, avoid hallucination, and use knowledge.
 
 ## GPT Usage Guidance
 
@@ -29,3 +35,8 @@ When using this as GPT training/reference context:
 - Never ship local URLs, database root credentials, or secrets in mobile/production builds.
 - Keep production `APP_DEBUG=false`.
 - Add tests for important behavior.
+- Use exact logs, commands, and reproducible facts before guessing.
+- For production incidents, mitigate user impact first, then root-cause.
+- Keep mobile/native production apps away from local URLs and direct database credentials.
+- Prefer small, reversible fixes for real-world bugs.
+- For custom GPT answers, use ordered checklists with concrete commands and verification steps.
