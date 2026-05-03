@@ -1,0 +1,47 @@
+name: Markdown Check
+
+on:
+  pull_request:
+    branches:
+      - master
+  push:
+    branches:
+      - master
+
+jobs:
+  markdown-check:
+    name: markdown-check
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Check required repo files
+        run: |
+          test -f README.md
+          test -f CONTRIBUTING.md
+          test -f LICENSE
+          test -f MAINTAINERS.md
+          test -f .github/CODEOWNERS
+          test -f .github/pull_request_template.md
+          test -d .github/ISSUE_TEMPLATE
+
+      - name: Check upload-ready files
+        run: |
+          test -d upload-ready
+          test -f upload-ready/00-gpt-setup.md
+          test -f upload-ready/01-laravel-core.md
+          test -f upload-ready/02-nativephp-core.md
+          test -f upload-ready/03-nativephp-offline-api-payment.md
+          test -f upload-ready/04-database-performance.md
+          test -f upload-ready/05-sockets-realtime.md
+          test -f upload-ready/06-debugging-emulator-incidents.md
+          test -f upload-ready/07-security-integrations-deployment.md
+          test -f upload-ready/08-architecture-testing-git.md
+
+      - name: Check markdown files are not empty
+        run: |
+          while IFS= read -r file; do
+            test -s "$file"
+          done < <(find . -name "*.md" -type f)
