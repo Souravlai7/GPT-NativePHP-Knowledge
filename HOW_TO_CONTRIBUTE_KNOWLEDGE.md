@@ -128,7 +128,7 @@ final
 git push -u origin add-nativephp-camera-notes
 ```
 
-Open a pull request into:
+Open a pull request into the upstream `master` branch:
 
 ```text
 souravlai7/GPT-NativePHP-Knowledge -> master
@@ -165,10 +165,16 @@ Use `Closes` or `Fixes` when the PR fully resolves the issue. Use `Refs` when it
 - Destructive commands without warnings.
 - Vague advice without checks or examples.
 
-## Maintainer
+## Review And Ownership
 
-Current maintainer:
+This repo uses `.github/CODEOWNERS`.
+
+Current code owner rules:
 
 ```text
-@souravlai7
+* @Web-Tech-Domains/approvers
+/.github/ @souravlai7
+/upload-ready/ @souravlai7
 ```
+
+Most pull requests require review from `@Web-Tech-Domains/approvers`. Changes under `.github/` and `upload-ready/` require review from `@souravlai7`.

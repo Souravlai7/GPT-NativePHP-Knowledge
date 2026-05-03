@@ -1,8 +1,18 @@
 # Maintainers
 
-## Owner
+## Maintainer
 
 - GitHub: `@souravlai7`
+
+## Code Owners
+
+The repo uses `.github/CODEOWNERS`.
+
+```text
+* @Web-Tech-Domains/approvers
+/.github/ @souravlai7
+/upload-ready/ @souravlai7
+```
 
 ## Responsibilities
 
