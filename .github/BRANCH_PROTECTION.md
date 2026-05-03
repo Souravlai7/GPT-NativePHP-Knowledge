@@ -32,6 +32,18 @@ Optional if you add CI later:
 - Require status checks to pass before merging.
 - Require branches to be up to date before merging.
 
+This repo includes a GitHub Actions workflow:
+
+```text
+.github/workflows/markdown-check.yml
+```
+
+Required status check name:
+
+```text
+markdown-check
+```
+
 ## Code Owner
 
 The repo uses `.github/CODEOWNERS`.
