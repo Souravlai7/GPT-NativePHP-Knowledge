@@ -1,0 +1,8 @@
+# Default owner for all files.
+* @souravlai7
+
+# GitHub templates and repo governance.
+/.github/ @souravlai7
+
+# Upload-ready merged knowledge files.
+/upload-ready/ @souravlai7

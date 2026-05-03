@@ -71,6 +71,26 @@ Before contributing:
 - Update `README.md` when adding a new file or major topic.
 - Regenerate `upload-ready/` when source knowledge changes.
 
+## Branch Protection
+
+The main branch is `master`.
+
+Recommended GitHub protection:
+
+- Require pull requests before merging.
+- Require at least 1 approval.
+- Require review from Code Owners.
+- Require conversation resolution.
+- Block direct pushes to `master`.
+
+Code owner:
+
+```text
+@souravlai7
+```
+
+See `.github/BRANCH_PROTECTION.md` and `.github/CODEOWNERS`.
+
 ## License
 
 This knowledge base is licensed under `CC BY 4.0`. You can share and adapt it, including for custom GPTs, as long as you provide attribution.
