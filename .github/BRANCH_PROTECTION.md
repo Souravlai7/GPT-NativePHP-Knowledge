@@ -1,4 +1,4 @@
-# Branch Protection Setup
+﻿# Branch Protection Setup
 
 Use these GitHub settings to protect the `master` branch.
 
@@ -59,13 +59,14 @@ This means pull requests require review from `souravlai7` when GitHub branch pro
 ## Recommended Workflow
 
 ```text
-1. Contributor forks the repo.
-2. Contributor creates a feature branch.
-3. Contributor edits source Markdown files.
-4. Contributor regenerates upload-ready files if needed.
-5. Contributor opens PR into master.
-6. souravlai7 reviews the PR.
-7. PR is merged only after approval and resolved conversations.
+1. Contributor opens or claims an issue.
+2. Contributor forks the repo.
+3. Contributor creates a feature branch.
+4. Contributor edits source Markdown files.
+5. Contributor regenerates upload-ready files if needed.
+6. Contributor opens PR into master and links the issue.
+7. souravlai7 reviews the PR.
+8. PR is merged only after approval and resolved conversations.
 ```
 
 ## Avoid Direct Pushes
@@ -82,3 +83,4 @@ git push -u origin update-nativephp-sync-notes
 ```
 
 Then open a pull request into `master`.
+
