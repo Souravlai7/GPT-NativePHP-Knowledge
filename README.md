@@ -4,6 +4,8 @@ This workspace contains Markdown training/reference notes for Laravel, NativePHP
 
 ## Files
 
+- `gpt-description.md`: Polished custom GPT description, behavior instructions, scope, and conversation starters.
+- `gpt-custom-instructions.md`: Paste-ready custom GPT Instructions for Laravel, NativePHP, offline sync, APIs, sockets, payments, debugging, and deployment.
 - `laravel-cheatsheet.md`: Laravel commands, routing, Eloquent, Blade, auth, queues, APIs, cache, storage, tests, deployment.
 - `mysql-optimization.md`: MySQL indexing, EXPLAIN, Laravel query optimization, transactions, pagination, database debugging.
 - `nativephp-notes.md`: NativePHP mobile commands, Android setup, emulator networking, build/debug guidance.
