@@ -1,4 +1,4 @@
-# Knowledge Base
+﻿# Knowledge Base
 
 This workspace contains Markdown training/reference notes for Laravel, NativePHP, PHP, MySQL, Android emulator debugging, APIs, deployment, frontend tooling, Git, testing, architecture, real-world troubleshooting, incidents, integrations, performance, and GPT instruction design.
 
@@ -65,6 +65,8 @@ Contributions are welcome.
 Before contributing:
 
 - Read `CONTRIBUTING.md`.
+- Create or claim an issue before opening a pull request.
+- Link the issue in the PR description using `Closes #`, `Fixes #`, or `Refs #`.
 - Edit source Markdown files in the repo root.
 - Do not add secrets, passwords, API keys, private URLs, customer data, or payment secrets.
 - Prefer practical examples with commands, code, checks, fixes, and verification steps.
@@ -94,3 +96,4 @@ See `.github/BRANCH_PROTECTION.md` and `.github/CODEOWNERS`.
 ## License
 
 This knowledge base is licensed under `CC BY 4.0`. You can share and adapt it, including for custom GPTs, as long as you provide attribution.
+
