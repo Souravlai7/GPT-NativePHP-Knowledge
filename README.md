@@ -51,3 +51,26 @@ When using this as GPT training/reference context:
 - For payments, keep secret keys and final verification on the backend; use webhooks and idempotency keys.
 - Prefer small, reversible fixes for real-world bugs.
 - For custom GPT answers, use ordered checklists with concrete commands and verification steps.
+
+## Upload Ready Files
+
+The `upload-ready/` folder contains merged Markdown files for custom GPT upload limits.
+
+Upload the numbered files from `upload-ready/` when a GPT builder limits the number of files. Keep the root Markdown files as editable source notes.
+
+## Contributing
+
+Contributions are welcome.
+
+Before contributing:
+
+- Read `CONTRIBUTING.md`.
+- Edit source Markdown files in the repo root.
+- Do not add secrets, passwords, API keys, private URLs, customer data, or payment secrets.
+- Prefer practical examples with commands, code, checks, fixes, and verification steps.
+- Update `README.md` when adding a new file or major topic.
+- Regenerate `upload-ready/` when source knowledge changes.
+
+## License
+
+This knowledge base is licensed under `CC BY 4.0`. You can share and adapt it, including for custom GPTs, as long as you provide attribution.
