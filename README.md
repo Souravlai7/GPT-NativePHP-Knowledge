@@ -8,6 +8,7 @@ This workspace contains Markdown training/reference notes for Laravel, NativePHP
 - `mysql-optimization.md`: MySQL indexing, EXPLAIN, Laravel query optimization, transactions, pagination, database debugging.
 - `nativephp-notes.md`: NativePHP mobile commands, Android setup, emulator networking, build/debug guidance.
 - `nativephp-auto-training.md`: Automatic response playbook for NativePHP posts/forms, API calls, app loading, database, emulator, and builds.
+- `nativephp-advanced-knowledge.md`: Advanced NativePHP architecture, auth, database, assets, permissions, plugins, offline sync, builds, signing, and release guidance.
 - `emulator-fixes.md`: Android Emulator, ADB, GPU, networking, and NativePHP/Laravel mobile fixes.
 - `debugging-notes.md`: General Laravel/PHP/Composer/MySQL/Vite/NativePHP troubleshooting.
 - `php-composer-knowledge.md`: PHP syntax, Composer, autoloading, extensions, quality habits.
