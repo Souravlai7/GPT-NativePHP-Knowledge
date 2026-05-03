@@ -1,8 +1,20 @@
-# Pull Request
+﻿# Pull Request
 
 ## Summary
 
 Describe what knowledge, examples, or fixes this PR adds.
+
+## Linked Issue
+
+Every PR should be created after an issue.
+
+Use one:
+
+``text
+Closes #
+Fixes #
+Refs #
+`` 
 
 ## Topic
 
@@ -21,6 +33,9 @@ Describe what knowledge, examples, or fixes this PR adds.
 
 ## Checklist
 
+- [ ] I created or claimed an issue before opening this PR.
+- [ ] I linked the issue above.
+
 - [ ] I edited source Markdown files, not only `upload-ready/`.
 - [ ] I did not include secrets, private data, private URLs, or customer data.
 - [ ] I included practical commands/code/checklists where useful.
@@ -31,3 +46,4 @@ Describe what knowledge, examples, or fixes this PR adds.
 ## Notes For Reviewers
 
 Mention anything version-specific, uncertain, or needing extra verification.
+
